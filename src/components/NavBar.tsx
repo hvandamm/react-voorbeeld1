@@ -43,7 +43,7 @@ export default function Navbar() {
       </div>
 
       {/* MIDDEN/RECHTS: Donkergroen Hoofdmenu */}
-      <nav className="hidden lg:flex items-center gap-5 font-medium text-emerald-800">
+      <nav className="hidden lg:flex items-center gap-35 font-bold text-emerald-800">
         <a href="#" className="hover:text-emerald-600 transition-colors border-b-2 border-emerald-600 pb-1 pt-1">Planning</a>
         <a href="#" className="hover:text-emerald-600 transition-colors">Zorgen</a>
         <a href="#" className="hover:text-emerald-600 transition-colors">Dossiers</a>

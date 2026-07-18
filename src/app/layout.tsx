@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navbar from "@/components/NavBar";
 
 export const metadata: Metadata = {
   title: "voorbeeld react app",
@@ -17,9 +18,10 @@ export default function RootLayout({
       <body className="h-screen w-screen flex flex-col overflow-hidden bg-gradient-to-r from-[rgb(235,248,254)] to-[rgb(164,223,248)] bg-slate-100 p-3 gap-3 antialiased text-slate-800">
         
         {/* 1. NAVBAR (Bovenkant) - Nu een losse zwevende kaart met ronde hoeken */}
-        <header className="h-16 w-full bg-white rounded-xl flex items-center px-6 shrink-0 shadow-sm">
+        <Navbar />
+        {/*<header className="h-16 w-full bg-white rounded-xl flex items-center px-6 shrink-0 shadow-sm">
           <div className="font-bold text-sky-600 text-xl">Navbar</div>
-        </header>
+        </header>*/}
 
         {/* Onderkant: Flexbox container met een gap (tussenruimte) van 12px (gap-3) */}
         <div className="flex flex-1 w-full gap-3 overflow-hidden">
