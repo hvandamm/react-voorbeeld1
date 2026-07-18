@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/NavBar";
+import Sidebar from "@/components/SideBar";
 
 export const metadata: Metadata = {
   title: "voorbeeld react app",
@@ -29,21 +30,8 @@ export default function RootLayout({
           {/* LINKERKOLOM (Bevat het menu en het vakje met de knop) */}
           {/* We geven de kolom zelf GEEN witte achtergrond, maar maken de componenten erin wit! */}
           <aside className="w-64 h-full flex flex-col gap-3 shrink-0">
-            
-            {/* 2. RECHTHOEK MET RONDE KNOP - Nu een losse witte kaart met ronde hoeken */}
-            <div className="h-20 w-full bg-white rounded-xl flex items-center justify-center p-4 shadow-sm">
-              <button className="w-12 h-12 rounded-full bg-sky-600 hover:bg-sky-700 text-white flex items-center justify-center shadow transition-colors">
-                <span className="text-xl font-bold">+</span>
-              </button>
-            </div>
 
-            {/* 3. MENU COLUMN - Ook een losse witte kaart met ronde hoeken */}
-            <nav className="flex-1 bg-white rounded-xl p-4 space-y-2 overflow-y-auto shadow-sm">
-              <div className="p-2 bg-sky-50 text-sky-700 rounded-lg cursor-pointer font-semibold">Dashboard</div>
-              <div className="p-2 hover:bg-slate-50 rounded-lg cursor-pointer font-medium text-slate-500">Planning</div>
-              <div className="p-2 hover:bg-slate-50 rounded-lg cursor-pointer font-medium text-slate-500">Patiënten</div>
-              <div className="p-2 hover:bg-slate-50 rounded-lg cursor-pointer font-medium text-slate-500">Facturen</div>
-            </nav>
+            <Sidebar />
 
           </aside>
 
